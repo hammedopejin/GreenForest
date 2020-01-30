@@ -15,6 +15,10 @@
 		0F8055A623E24C6300B5960C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F8055A423E24C6300B5960C /* LaunchScreen.storyboard */; };
 		0F8055B123E24C6300B5960C /* GreenForestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8055B023E24C6300B5960C /* GreenForestTests.swift */; };
 		0F8055BC23E24C6300B5960C /* GreenForestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8055BB23E24C6300B5960C /* GreenForestUITests.swift */; };
+		0F8055CB23E25BC900B5960C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F8055CA23E25BC900B5960C /* GoogleService-Info.plist */; };
+		144E834A7C08BFC2BAE578EF /* Pods_GreenForest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D37320218F9D2FE349C524 /* Pods_GreenForest.framework */; };
+		70992BAD4B7A6C0D2984208B /* Pods_GreenForestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADDD6C6EFE7C8D6278C2BAC /* Pods_GreenForestUITests.framework */; };
+		7B8B0513563456962336F977 /* Pods_GreenForestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3F93F52626673DD8C45648 /* Pods_GreenForestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06D37320218F9D2FE349C524 /* Pods_GreenForest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreenForest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F80559623E24C5E00B5960C /* GreenForest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenForest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F80559923E24C5E00B5960C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F80559B23E24C5E00B5960C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +54,15 @@
 		0F8055B723E24C6300B5960C /* GreenForestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreenForestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F8055BB23E24C6300B5960C /* GreenForestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenForestUITests.swift; sourceTree = "<group>"; };
 		0F8055BD23E24C6300B5960C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F8055CA23E25BC900B5960C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		248EA16898675CB1FE2A5F4D /* Pods-GreenForestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForestTests/Pods-GreenForestTests.release.xcconfig"; sourceTree = "<group>"; };
+		281EC7B4CF989AD22FC3109B /* Pods-GreenForest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForest/Pods-GreenForest.release.xcconfig"; sourceTree = "<group>"; };
+		39535DFCC97B4346EB945448 /* Pods-GreenForestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForestTests/Pods-GreenForestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5ADDD6C6EFE7C8D6278C2BAC /* Pods_GreenForestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreenForestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB3D98AC73B5E2F693BDE19 /* Pods-GreenForest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForest/Pods-GreenForest.debug.xcconfig"; sourceTree = "<group>"; };
+		86F500EC01219A8598D27E0B /* Pods-GreenForestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForestUITests/Pods-GreenForestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D26C3953B045C3020E8A2779 /* Pods-GreenForestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForestUITests/Pods-GreenForestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE3F93F52626673DD8C45648 /* Pods_GreenForestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GreenForestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				144E834A7C08BFC2BAE578EF /* Pods_GreenForest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8B0513563456962336F977 /* Pods_GreenForestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70992BAD4B7A6C0D2984208B /* Pods_GreenForestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +100,8 @@
 				0F8055AF23E24C6300B5960C /* GreenForestTests */,
 				0F8055BA23E24C6300B5960C /* GreenForestUITests */,
 				0F80559723E24C5E00B5960C /* Products */,
+				A3544E101307CCA2C35E40A3 /* Pods */,
+				C22AA50C3FCFB1625476B133 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +118,7 @@
 		0F80559823E24C5E00B5960C /* GreenForest */ = {
 			isa = PBXGroup;
 			children = (
+				0F8055C923E2510300B5960C /* Model */,
 				0F80559923E24C5E00B5960C /* AppDelegate.swift */,
 				0F80559B23E24C5E00B5960C /* SceneDelegate.swift */,
 				0F80559D23E24C5E00B5960C /* ViewController.swift */,
@@ -106,6 +126,7 @@
 				0F8055A223E24C6300B5960C /* Assets.xcassets */,
 				0F8055A423E24C6300B5960C /* LaunchScreen.storyboard */,
 				0F8055A723E24C6300B5960C /* Info.plist */,
+				0F8055CA23E25BC900B5960C /* GoogleService-Info.plist */,
 			);
 			path = GreenForest;
 			sourceTree = "<group>";
@@ -128,6 +149,36 @@
 			path = GreenForestUITests;
 			sourceTree = "<group>";
 		};
+		0F8055C923E2510300B5960C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3544E101307CCA2C35E40A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CB3D98AC73B5E2F693BDE19 /* Pods-GreenForest.debug.xcconfig */,
+				281EC7B4CF989AD22FC3109B /* Pods-GreenForest.release.xcconfig */,
+				39535DFCC97B4346EB945448 /* Pods-GreenForestTests.debug.xcconfig */,
+				248EA16898675CB1FE2A5F4D /* Pods-GreenForestTests.release.xcconfig */,
+				86F500EC01219A8598D27E0B /* Pods-GreenForestUITests.debug.xcconfig */,
+				D26C3953B045C3020E8A2779 /* Pods-GreenForestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C22AA50C3FCFB1625476B133 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06D37320218F9D2FE349C524 /* Pods_GreenForest.framework */,
+				FE3F93F52626673DD8C45648 /* Pods_GreenForestTests.framework */,
+				5ADDD6C6EFE7C8D6278C2BAC /* Pods_GreenForestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F8055C023E24C6300B5960C /* Build configuration list for PBXNativeTarget "GreenForest" */;
 			buildPhases = (
+				CA914EA53B0E38AA48B62679 /* [CP] Check Pods Manifest.lock */,
 				0F80559223E24C5E00B5960C /* Sources */,
 				0F80559323E24C5E00B5960C /* Frameworks */,
 				0F80559423E24C5E00B5960C /* Resources */,
+				065665D790023BD6404AA982 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F8055C323E24C6300B5960C /* Build configuration list for PBXNativeTarget "GreenForestTests" */;
 			buildPhases = (
+				12A3BBF29CED4E725A7E0200 /* [CP] Check Pods Manifest.lock */,
 				0F8055A823E24C6300B5960C /* Sources */,
 				0F8055A923E24C6300B5960C /* Frameworks */,
 				0F8055AA23E24C6300B5960C /* Resources */,
@@ -170,6 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F8055C623E24C6300B5960C /* Build configuration list for PBXNativeTarget "GreenForestUITests" */;
 			buildPhases = (
+				3185FC90E434B26BCEA4972C /* [CP] Check Pods Manifest.lock */,
 				0F8055B323E24C6300B5960C /* Sources */,
 				0F8055B423E24C6300B5960C /* Frameworks */,
 				0F8055B523E24C6300B5960C /* Resources */,
@@ -232,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F8055CB23E25BC900B5960C /* GoogleService-Info.plist in Resources */,
 				0F8055A623E24C6300B5960C /* LaunchScreen.storyboard in Resources */,
 				0F8055A323E24C6300B5960C /* Assets.xcassets in Resources */,
 				0F8055A123E24C5E00B5960C /* Main.storyboard in Resources */,
@@ -253,6 +309,123 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		065665D790023BD6404AA982 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GreenForest/Pods-GreenForest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/EmptyDataSet-Swift/EmptyDataSet_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/Gallery/Gallery.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/InstantSearchClient/InstantSearchClient.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmptyDataSet_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gallery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InstantSearchClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreenForest/Pods-GreenForest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12A3BBF29CED4E725A7E0200 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GreenForestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3185FC90E434B26BCEA4972C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GreenForestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA914EA53B0E38AA48B62679 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GreenForest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F80559223E24C5E00B5960C /* Sources */ = {
@@ -432,6 +605,7 @@
 		};
 		0F8055C123E24C6300B5960C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB3D98AC73B5E2F693BDE19 /* Pods-GreenForest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +624,7 @@
 		};
 		0F8055C223E24C6300B5960C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 281EC7B4CF989AD22FC3109B /* Pods-GreenForest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +643,7 @@
 		};
 		0F8055C423E24C6300B5960C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39535DFCC97B4346EB945448 /* Pods-GreenForestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +666,7 @@
 		};
 		0F8055C523E24C6300B5960C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 248EA16898675CB1FE2A5F4D /* Pods-GreenForestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +689,7 @@
 		};
 		0F8055C723E24C6300B5960C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86F500EC01219A8598D27E0B /* Pods-GreenForestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +710,7 @@
 		};
 		0F8055C823E24C6300B5960C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D26C3953B045C3020E8A2779 /* Pods-GreenForestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>138333892126-ron0s0qriep0sq7osvcqin51au3361sp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.138333892126-ron0s0qriep0sq7osvcqin51au3361sp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC-v0W9tR2QaZ9ISp4f-mgVjWL89hjUK0g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>138333892126</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.planetpeopleplatform.GreenForest</string>
+	<key>PROJECT_ID</key>
+	<string>greenforest-e5544</string>
+	<key>STORAGE_BUCKET</key>
+	<string>greenforest-e5544.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:138333892126:ios:d3b11f890cd522a940480f</string>
+	<key>DATABASE_URL</key>
+	<string>https://greenforest-e5544.firebaseio.com</string>
+</dict>
+</plist>

@@ -21,6 +21,7 @@
 		0FDFFB1B23E3A1E900118166 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDFFB1A23E3A1E900118166 /* Constants.swift */; };
 		0FDFFB1D23E3A93300118166 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDFFB1C23E3A93300118166 /* Item.swift */; };
 		0FDFFB1F23E3ACEA00118166 /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDFFB1E23E3ACEA00118166 /* Basket.swift */; };
+		0FDFFB2123E5142400118166 /* FUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDFFB2023E5142400118166 /* FUser.swift */; };
 		144E834A7C08BFC2BAE578EF /* Pods_GreenForest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D37320218F9D2FE349C524 /* Pods_GreenForest.framework */; };
 		70992BAD4B7A6C0D2984208B /* Pods_GreenForestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADDD6C6EFE7C8D6278C2BAC /* Pods_GreenForestUITests.framework */; };
 		7B8B0513563456962336F977 /* Pods_GreenForestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3F93F52626673DD8C45648 /* Pods_GreenForestTests.framework */; };
@@ -65,6 +66,7 @@
 		0FDFFB1A23E3A1E900118166 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0FDFFB1C23E3A93300118166 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0FDFFB1E23E3ACEA00118166 /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
+		0FDFFB2023E5142400118166 /* FUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUser.swift; sourceTree = "<group>"; };
 		248EA16898675CB1FE2A5F4D /* Pods-GreenForestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForestTests/Pods-GreenForestTests.release.xcconfig"; sourceTree = "<group>"; };
 		281EC7B4CF989AD22FC3109B /* Pods-GreenForest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForest/Pods-GreenForest.release.xcconfig"; sourceTree = "<group>"; };
 		39535DFCC97B4346EB945448 /* Pods-GreenForestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForestTests/Pods-GreenForestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				0FDFFB1623E399B300118166 /* Category.swift */,
 				0FDFFB1C23E3A93300118166 /* Item.swift */,
 				0FDFFB1E23E3ACEA00118166 /* Basket.swift */,
+				0FDFFB2023E5142400118166 /* FUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 				0F80559A23E24C5E00B5960C /* AppDelegate.swift in Sources */,
 				0F80559C23E24C5E00B5960C /* SceneDelegate.swift in Sources */,
 				0FDFFB1D23E3A93300118166 /* Item.swift in Sources */,
+				0FDFFB2123E5142400118166 /* FUser.swift in Sources */,
 				0FDFFB1723E399B300118166 /* Category.swift in Sources */,
 				0FDFFB1B23E3A1E900118166 /* Constants.swift in Sources */,
 			);

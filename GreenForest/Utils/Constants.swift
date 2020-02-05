@@ -2,16 +2,17 @@
 //  Constants.swift
 //  GreenForest
 //
-//  Created by Hammed opejin on 1/30/20.
+//  Created by Hammed opejin on 2/3/20.
 //  Copyright © 2020 Hammed opejin. All rights reserved.
 //
 
 import Foundation
+
 enum Constants {
     static let publishableKey = ""
-    static let baseURLString = "https://idsmarket.herokuapp.com" //"http://localhost:3000/"
+    static let baseURLString = "https://" //"http://localhost:3000/"
     static let defaultCurrency = "usd"
-    static let defaultDescription = "Purchase from Market"
+    static let defaultDescription = "Purchase"
 }
 
 //IDS and Keys

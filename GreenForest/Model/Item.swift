@@ -24,12 +24,12 @@ class Item {
     
     init(_dictionary: NSDictionary) {
         
-        id = _dictionary[kOBJECTID] as? String
-        categoryId = _dictionary[kCATEGORYID] as? String
-        name = _dictionary[kNAME] as? String
-        description = _dictionary[kDESCRIPTION] as? String
-        price = _dictionary[kPRICE] as? Double
-        imageLinks = _dictionary[kIMAGELINKS] as? [String]
+        id = _dictionary[CategoryKeys.kOBJECTID] as? String
+        categoryId = _dictionary[ItemKeys.kCATEGORYID] as? String
+        name = _dictionary[CategoryKeys.kNAME] as? String
+        description = _dictionary[ItemKeys.kDESCRIPTION] as? String
+        price = _dictionary[ItemKeys.kPRICE] as? Double
+        imageLinks = _dictionary[ItemKeys.kIMAGELINKS] as? [String]
     }
 }
 
@@ -46,7 +46,7 @@ func saveItemToFirestore(_ item: Item) {
 
 func itemDictionaryFrom(_ item: Item) -> NSDictionary {
     
-    return NSDictionary(objects: [item.id, item.categoryId, item.name, item.description, item.price, item.imageLinks], forKeys: [kOBJECTID as NSCopying, kCATEGORYID as NSCopying, kNAME as NSCopying, kDESCRIPTION as NSCopying, kPRICE as NSCopying, kIMAGELINKS as NSCopying])
+    return NSDictionary(objects: [item.id, item.categoryId, item.name, item.description, item.price, item.imageLinks], forKeys: [CategoryKeys.kOBJECTID as NSCopying, ItemKeys.kCATEGORYID as NSCopying, CategoryKeys.kNAME as NSCopying, ItemKeys.kDESCRIPTION as NSCopying, ItemKeys.kPRICE as NSCopying, ItemKeys.kIMAGELINKS as NSCopying])
 }
 
 
@@ -55,7 +55,7 @@ func downloadItemsFromFirebase(_ withCategoryId: String, completion: @escaping (
     
     var itemArray: [Item] = []
     
-    FirebaseReference(.Items).whereField(kCATEGORYID, isEqualTo: withCategoryId).getDocuments { (snapshot, error) in
+    FirebaseReference(.Items).whereField(ItemKeys.kCATEGORYID, isEqualTo: withCategoryId).getDocuments { (snapshot, error) in
         
         guard let snapshot = snapshot else {
             completion(itemArray)

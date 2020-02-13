@@ -25,9 +25,9 @@ class Category {
     }
     
     init(_dictionary: NSDictionary) {
-        id = _dictionary[kOBJECTID] as! String
-        name = _dictionary[kNAME] as! String
-        image = UIImage(named: _dictionary[kIMAGENAME] as? String ?? "")
+        id = _dictionary[CategoryKeys.kOBJECTID] as! String
+        name = _dictionary[CategoryKeys.kNAME] as! String
+        image = UIImage(named: _dictionary[CategoryKeys.kIMAGENAME] as? String ?? "")
     }
 }
 
@@ -70,5 +70,5 @@ func saveCategoryToFirebase(_ category: Category) {
 
 func categoryDictionaryFrom(_ category: Category) -> NSDictionary {
     
-    return NSDictionary(objects: [category.id, category.name, category.imageName], forKeys: [kOBJECTID as NSCopying, kNAME as NSCopying, kIMAGENAME as NSCopying])
+    return NSDictionary(objects: [category.id, category.name, category.imageName], forKeys: [CategoryKeys.kOBJECTID as NSCopying, CategoryKeys.kNAME as NSCopying, CategoryKeys.kIMAGENAME as NSCopying])
 }

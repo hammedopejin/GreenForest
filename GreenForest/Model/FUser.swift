@@ -38,20 +38,20 @@ class FUser {
 
     init(_dictionary: NSDictionary) {
         
-       objectId = _dictionary[kOBJECTID] as! String
+        objectId = _dictionary[CategoryKeys.kOBJECTID] as! String
         
-        if let mail = _dictionary[kEMAIL] {
+        if let mail = _dictionary[UserKeys.kEMAIL] {
             email = mail as! String
         } else {
             email = ""
         }
         
-        if let fname = _dictionary[kFIRSTNAME] {
+        if let fname = _dictionary[UserKeys.kFIRSTNAME] {
             firstName = fname as! String
         } else {
             firstName = ""
         }
-        if let lname = _dictionary[kLASTNAME] {
+        if let lname = _dictionary[UserKeys.kLASTNAME] {
             lastName = lname as! String
         } else {
             lastName = ""
@@ -59,19 +59,19 @@ class FUser {
         
         fullName = firstName + " " + lastName
         
-        if let faddress = _dictionary[kFULLADDRESS] {
+        if let faddress = _dictionary[UserKeys.kFULLADDRESS] {
            fullAddress = faddress as! String
         } else {
            fullAddress = ""
         }
         
-        if let onB = _dictionary[kONBOARD] {
+        if let onB = _dictionary[UserKeys.kONBOARD] {
           onBoard = onB as! Bool
         } else {
           onBoard = false
         }
 
-        if let purchaseIds = _dictionary[kPURCHASEDITEMIDS] {
+        if let purchaseIds = _dictionary[UserKeys.kPURCHASEDITEMIDS] {
          purchasedItemIds = purchaseIds as! [String]
        } else {
          purchasedItemIds = []
@@ -88,7 +88,7 @@ class FUser {
     class func currentUser() -> FUser? {
         
         if Auth.auth().currentUser != nil {
-            if let dictionary = UserDefaults.standard.object(forKey: kCURRENTUSER) {
+            if let dictionary = UserDefaults.standard.object(forKey: UserKeys.kCURRENTUSER) {
                 return FUser.init(_dictionary: dictionary as! NSDictionary)
             }
         }
@@ -165,7 +165,7 @@ class FUser {
         
         do {
             try Auth.auth().signOut()
-            UserDefaults.standard.removeObject(forKey: kCURRENTUSER)
+            UserDefaults.standard.removeObject(forKey: UserKeys.kCURRENTUSER)
             UserDefaults.standard.synchronize()
             completion(nil)
 
@@ -220,7 +220,7 @@ func saveUserToFirestore(fUser: FUser) {
 
 func saveUserLocally(mUserDictionary: NSDictionary) {
     
-    UserDefaults.standard.set(mUserDictionary, forKey: kCURRENTUSER)
+    UserDefaults.standard.set(mUserDictionary, forKey: UserKeys.kCURRENTUSER)
     UserDefaults.standard.synchronize()
 }
 
@@ -229,7 +229,7 @@ func saveUserLocally(mUserDictionary: NSDictionary) {
 
 func userDictionaryFrom(user: FUser) -> NSDictionary {
     
-    return NSDictionary(objects: [user.objectId, user.email, user.firstName, user.lastName, user.fullName, user.fullAddress ?? "", user.onBoard, user.purchasedItemIds], forKeys: [kOBJECTID as NSCopying, kEMAIL as NSCopying, kFIRSTNAME as NSCopying, kLASTNAME as NSCopying, kFULLNAME as NSCopying, kFULLADDRESS as NSCopying, kONBOARD as NSCopying, kPURCHASEDITEMIDS as NSCopying])
+    return NSDictionary(objects: [user.objectId, user.email, user.firstName, user.lastName, user.fullName, user.fullAddress ?? "", user.onBoard, user.purchasedItemIds], forKeys: [CategoryKeys.kOBJECTID as NSCopying, UserKeys.kEMAIL as NSCopying, UserKeys.kFIRSTNAME as NSCopying, UserKeys.kLASTNAME as NSCopying, UserKeys.kFULLNAME as NSCopying, UserKeys.kFULLADDRESS as NSCopying, UserKeys.kONBOARD as NSCopying, UserKeys.kPURCHASEDITEMIDS as NSCopying])
 }
 
 //MARK: - Update user
@@ -237,7 +237,7 @@ func userDictionaryFrom(user: FUser) -> NSDictionary {
 func updateCurrentUserInFirestore(withValues: [String : Any], completion: @escaping (_ error: Error?) -> Void) {
     
     
-    if let dictionary = UserDefaults.standard.object(forKey: kCURRENTUSER) {
+    if let dictionary = UserDefaults.standard.object(forKey: UserKeys.kCURRENTUSER) {
         
         let userObject = (dictionary as! NSDictionary).mutableCopy() as! NSMutableDictionary
         userObject.setValuesForKeys(withValues)

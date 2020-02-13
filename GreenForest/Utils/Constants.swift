@@ -16,40 +16,50 @@ enum Constants {
 }
 
 //IDS and Keys
-public let kFILEREFERENCE = "gs://"
-public let kALGFOLIA_APP_ID = ""
-public let kALGOLIA_SEARCH_KEY = ""
-public let kALGOLIA_ADMIN_KEY = ""
+struct Algolia {
+    public static let kFILEREFERENCE = "gs://"
+    public static let kALGOLIA_APP_ID = ""
+    public static let kALGOLIA_SEARCH_KEY = ""
+    public static let kALGOLIA_ADMIN_KEY = ""
+}
 
 //Firebase Headers
-public let kUSER_PATH = "User"
-public let kCATEGORY_PATH = "Category"
-public let kITEMS_PATH = "Items"
-public let kBASKET_PATH = "Basket"
-
-
+struct FirebaseKeys {
+    public static let kUSER_PATH = "User"
+    public static let kCATEGORY_PATH = "Category"
+    public static let kITEMS_PATH = "Items"
+    public static let kBASKET_PATH = "Basket"
+}
 
 //Category
-public let kNAME = "name"
-public let kIMAGENAME = "imageName"
-public let kOBJECTID = "objectId"
+struct CategoryKeys {
+    public static let kNAME = "name"
+    public static let kIMAGENAME = "imageName"
+    public static let kOBJECTID = "objectId"
+}
 
 //Item
-public let kCATEGORYID = "categoryId"
-public let kDESCRIPTION = "description"
-public let kPRICE = "price"
-public let kIMAGELINKS = "imageLinks"
+struct ItemKeys {
+    public static let kCATEGORYID = "categoryId"
+    public static let kDESCRIPTION = "description"
+    public static let kPRICE = "price"
+    public static let kIMAGELINKS = "imageLinks"
+}
 
 //Basket
-public let kOWNERID = "ownerId"
-public let kITEMIDS = "itemIds"
+struct BasketKeys {
+    public static let kOWNERID = "ownerId"
+    public static let kITEMIDS = "itemIds"
+}
 
 //User
-public let kEMAIL = "email"
-public let kFIRSTNAME  = "firstName"
-public let kLASTNAME  = "lastName"
-public let kFULLNAME  = "fullName"
-public let kCURRENTUSER  = "currentUser"
-public let kFULLADDRESS  = "fullAddress"
-public let kONBOARD  = "onBoard"
-public let kPURCHASEDITEMIDS  = "purchasedItemIds"
+struct UserKeys {
+    public static let kEMAIL = "email"
+    public static let kFIRSTNAME  = "firstName"
+    public static let kLASTNAME  = "lastName"
+    public static let kFULLNAME  = "fullName"
+    public static let kCURRENTUSER  = "currentUser"
+    public static let kFULLADDRESS  = "fullAddress"
+    public static let kONBOARD  = "onBoard"
+    public static let kPURCHASEDITEMIDS  = "purchasedItemIds"
+}

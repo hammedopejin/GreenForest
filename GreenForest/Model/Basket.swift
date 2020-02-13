@@ -18,9 +18,9 @@ class Basket {
     }
     
     init(_dictionary: NSDictionary) {
-        id = _dictionary[kOBJECTID] as? String
-        ownerId = _dictionary[kOWNERID] as? String
-        itemIds = _dictionary[kITEMIDS] as? [String]
+        id = _dictionary[CategoryKeys.kOBJECTID] as? String
+        ownerId = _dictionary[BasketKeys.kOWNERID] as? String
+        itemIds = _dictionary[BasketKeys.kITEMIDS] as? [String]
     }
 }
 
@@ -28,7 +28,7 @@ class Basket {
 //MARK: - Download items
 func downloadBasketFromFirestore(_ ownerId: String, completion: @escaping (_ basket: Basket?)-> Void) {
     
-    FirebaseReference(.Basket).whereField(kOWNERID, isEqualTo: ownerId).getDocuments { (snapshot, error) in
+    FirebaseReference(.Basket).whereField(BasketKeys.kOWNERID, isEqualTo: ownerId).getDocuments { (snapshot, error) in
         
         guard let snapshot = snapshot else {
             
@@ -57,7 +57,7 @@ func saveBasketToFirestore(_ basket: Basket) {
 
 func basketDictionaryFrom(_ basket: Basket) -> NSDictionary {
     
-    return NSDictionary(objects: [basket.id, basket.ownerId, basket.itemIds], forKeys: [kOBJECTID as NSCopying, kOWNERID as NSCopying, kITEMIDS as NSCopying])
+    return NSDictionary(objects: [basket.id, basket.ownerId, basket.itemIds], forKeys: [CategoryKeys.kOBJECTID as NSCopying, BasketKeys.kOWNERID as NSCopying, BasketKeys.kITEMIDS as NSCopying])
 }
 
 //MARK: - Update basket

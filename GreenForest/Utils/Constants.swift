@@ -10,7 +10,7 @@ import Foundation
 
 enum Constants {
     static let publishableKey = ""
-    static let baseURLString = "https://" //"http://localhost:3000/"
+    static let baseURLString = "https://" ///"http://localhost:3000/"
     static let defaultCurrency = "usd"
     static let defaultDescription = "Purchase"
 }

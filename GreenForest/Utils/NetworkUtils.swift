@@ -51,7 +51,7 @@ func saveImageInFirebase(imageData: Data, fileName: String, completion: @escapin
     
     var task: StorageUploadTask!
     
-    let storageRef = storage.reference(forURL: Algolia.kFILEREFERENCE).child(fileName)
+    let storageRef = storage.reference(forURL: FirebaseKeys.kIMAGEFOLDERREFERENCE).child(fileName)
     
     task = storageRef.putData(imageData, metadata: nil, completion: { (metadata, error) in
         

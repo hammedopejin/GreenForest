@@ -17,7 +17,6 @@ enum Constants {
 
 //IDS and Keys
 struct Algolia {
-    public static let kFILEREFERENCE = "gs://"
     public static let kALGOLIA_APP_ID = ""
     public static let kALGOLIA_SEARCH_KEY = ""
     public static let kALGOLIA_ADMIN_KEY = ""
@@ -25,6 +24,7 @@ struct Algolia {
 
 //Firebase Headers
 struct FirebaseKeys {
+    public static let kIMAGEFOLDERREFERENCE = "gs://greenforest-e5544.appspot.com"
     public static let kUSER_PATH = "User"
     public static let kCATEGORY_PATH = "Category"
     public static let kITEMS_PATH = "Items"

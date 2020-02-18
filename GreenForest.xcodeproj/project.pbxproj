@@ -166,10 +166,10 @@
 				0F80559B23E24C5E00B5960C /* SceneDelegate.swift */,
 				0FDFFB2C23E8FFAE00118166 /* Utils */,
 				0FDFFB1823E39FDA00118166 /* FirebaseReference.swift */,
-				0FDFFB4623F9CA3000118166 /* Service */,
 				0F80559F23E24C5E00B5960C /* Main.storyboard */,
 				0F8055A223E24C6300B5960C /* Assets.xcassets */,
 				0F8055A423E24C6300B5960C /* LaunchScreen.storyboard */,
+				0FDFFB4623F9CA3000118166 /* Service */,
 				0F8055A723E24C6300B5960C /* Info.plist */,
 				0F8055CA23E25BC900B5960C /* GoogleService-Info.plist */,
 			);

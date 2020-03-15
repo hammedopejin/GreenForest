@@ -37,6 +37,7 @@
 		0FDFFB4323F774DF00118166 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDFFB4223F774DF00118166 /* EditProfileViewController.swift */; };
 		0FDFFB4523F9C2AA00118166 /* PurchasedHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDFFB4423F9C2AA00118166 /* PurchasedHistoryTableViewController.swift */; };
 		0FDFFB4823F9CA5C00118166 /* AlgoliaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDFFB4723F9CA5C00118166 /* AlgoliaService.swift */; };
+		0FDFFB4A241D85AE00118166 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDFFB49241D85AD00118166 /* BasketViewController.swift */; };
 		144E834A7C08BFC2BAE578EF /* Pods_GreenForest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D37320218F9D2FE349C524 /* Pods_GreenForest.framework */; };
 		70992BAD4B7A6C0D2984208B /* Pods_GreenForestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADDD6C6EFE7C8D6278C2BAC /* Pods_GreenForestUITests.framework */; };
 		7B8B0513563456962336F977 /* Pods_GreenForestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3F93F52626673DD8C45648 /* Pods_GreenForestTests.framework */; };
@@ -97,6 +98,7 @@
 		0FDFFB4223F774DF00118166 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		0FDFFB4423F9C2AA00118166 /* PurchasedHistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasedHistoryTableViewController.swift; sourceTree = "<group>"; };
 		0FDFFB4723F9CA5C00118166 /* AlgoliaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgoliaService.swift; sourceTree = "<group>"; };
+		0FDFFB49241D85AD00118166 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
 		248EA16898675CB1FE2A5F4D /* Pods-GreenForestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForestTests/Pods-GreenForestTests.release.xcconfig"; sourceTree = "<group>"; };
 		281EC7B4CF989AD22FC3109B /* Pods-GreenForest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForest.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForest/Pods-GreenForest.release.xcconfig"; sourceTree = "<group>"; };
 		39535DFCC97B4346EB945448 /* Pods-GreenForestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreenForestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreenForestTests/Pods-GreenForestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				0FDFFB2323E6460700118166 /* CategoryCollectionViewController.swift */,
+				0FDFFB49241D85AD00118166 /* BasketViewController.swift */,
 				0FDFFB3823F625F500118166 /* ItemsTableViewController.swift */,
 				0FDFFB3A23F6265700118166 /* ItemViewController.swift */,
 				0FDFFB3C23F6267F00118166 /* AddItemViewController.swift */,
@@ -540,6 +543,7 @@
 				0FDFFB2423E6460700118166 /* CategoryCollectionViewController.swift in Sources */,
 				0FDFFB3923F625F500118166 /* ItemsTableViewController.swift in Sources */,
 				0FDFFB1923E39FDA00118166 /* FirebaseReference.swift in Sources */,
+				0FDFFB4A241D85AE00118166 /* BasketViewController.swift in Sources */,
 				0FDFFB2B23E7B2CE00118166 /* ImageCollectionViewCell.swift in Sources */,
 				0FDFFB1F23E3ACEA00118166 /* Basket.swift in Sources */,
 				0FDFFB3023E900B200118166 /* Constants.swift in Sources */,

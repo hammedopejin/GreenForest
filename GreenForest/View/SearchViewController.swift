@@ -11,7 +11,7 @@ import NVActivityIndicatorView
 import EmptyDataSet_Swift
 
 class SearchViewController: UIViewController {
-
+    
     //MARK: - IBOutlets
     
     @IBOutlet weak var searchOptionsView: UIView!
@@ -26,10 +26,10 @@ class SearchViewController: UIViewController {
     
     
     //MARK: - View Lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.tableFooterView = UIView()
         
         searchTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
@@ -66,14 +66,23 @@ class SearchViewController: UIViewController {
     }
     
     //MARK: - Search database
-
+    
     private func searchInFirebase(forName: String) {
         
         showLoadingIndicator()
         
-        ///searchAlgolia
+        searchAlgolia(searchString: forName) { (itemIds) in
+            
+            downloadItems(itemIds) { (allItems) in
+                
+                self.searchResults = allItems
+                self.tableView.reloadData()
+                
+                self.hideLoadingIndicator()
+            }
+        }
     }
-
+    
     
     //MARK: - Helpers
     
@@ -102,7 +111,7 @@ class SearchViewController: UIViewController {
         searchButtonOutlet.isEnabled = false
         searchButtonOutlet.backgroundColor = #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
     }
-
+    
     private func showSearchField() {
         
         disableSearchButton()
@@ -118,7 +127,7 @@ class SearchViewController: UIViewController {
             self.searchOptionsView.isHidden = !self.searchOptionsView.isHidden
         }
     }
-
+    
     //MARK: - Activity indicator
     
     private func showLoadingIndicator() {
@@ -128,7 +137,7 @@ class SearchViewController: UIViewController {
             activityIndicator!.startAnimating()
         }
     }
-
+    
     
     private func hideLoadingIndicator() {
         if activityIndicator != nil {
@@ -175,7 +184,7 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
         
         showItemView(withItem: searchResults[indexPath.row])
     }
-
+    
 }
 
 
